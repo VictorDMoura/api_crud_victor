@@ -1,0 +1,26 @@
+{
+  "name": "api_crud_victor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --watch \"srcts/\" -e \"ts, json\" --exec \"ts-node srcts/index.ts\"",
+    "build": "tsc",
+    "prod": "npm run build && node outjs/index.js",
+    "start": "node outjs/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "express": "^4.19.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "@types/nodemon": "^1.19.6",
+    "nodemon": "^3.1.4"
+  }
+}
